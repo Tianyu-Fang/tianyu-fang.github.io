@@ -1,18 +1,22 @@
-name: Angular CI/CD
+name: Deploy Angular to GitHub Pages
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -23,12 +27,11 @@ jobs:
       - name: Build Angular project
         run: npm run build -- --output-path=docs --base-href="/tianyu-fang.github.io/"
 
-      - name: Move `index.html` to docs/
+      - name: Move index.html to docs/
         run: mv docs/browser/index.html docs/
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./docs
+          branch: gh-pages
+          folder: docs
