@@ -1,25 +1,22 @@
-name: Deploy Angular to GitHub Pages
+name: Angular CI/CD
 
 on:
   push:
     branches:
       - main
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4  # Updated to v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4  # Updated to v4
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -27,21 +24,10 @@ jobs:
         run: npm install
 
       - name: Build Angular project
-        run: npm run build -- --output-path=dist --base-href="/"
+        run: npm run build -- --output-path=docs --base-href="/tianyu-fang.github.io/"
 
-      - name: Upload artifact for deployment
-        uses: actions/upload-pages-artifact@v2  # Updated to latest version
-        with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2  # Updated to latest version
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
