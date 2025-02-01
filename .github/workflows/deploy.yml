@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -25,13 +27,21 @@ jobs:
         run: npm install
 
       - name: Build Angular project
-        run: npm run build -- --output-path=docs --base-href="/tianyu-fang.github.io/"
+        run: npm run build -- --output-path=dist --base-href="/"
 
-      - name: Move index.html to docs/
-        run: mv docs/browser/index.html docs/
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact for deployment
+        uses: actions/upload-pages-artifact@v2
         with:
-          branch: gh-pages
-          folder: docs
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
