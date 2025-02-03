@@ -1,0 +1,48 @@
+/* Dark theme background */
+.home-container {
+    color: white;
+    padding: 100px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Hey, there 👋 */
+  .intro-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #a9b2c3;
+  }
+  
+  /* Main Heading */
+  .main-heading {
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  
+  /* Highlighting Name */
+  .highlight {
+    color: #5a9bd5; /* Soft blue */
+    font-weight: 800;
+  }
+  
+  /* Different Colors for Job Titles */
+  .software-engineer {
+    color: #f5d8ab; /* Orange */
+    font-weight: 800;
+  }
+  
+  .data-enthusiast {
+    color: #c6fddd; /* Green */
+    font-weight: 800;
+  }
+  
+  /* Subtitle Text */
+  .sub-text {
+    font-size: 20px;
+    color: #a9b2c3;
+    margin-top: 10px;
+  }
+  

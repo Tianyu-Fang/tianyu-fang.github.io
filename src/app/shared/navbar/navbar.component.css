@@ -1,18 +1,37 @@
-.navbar-brand {
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-item {
-    margin-right: 15px;
+.navbar-nav .nav-item {
+    position: relative;
   }
   
   .navbar-nav .nav-link {
-    color: white !important;
+    padding: 10px 15px;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 18px;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
   }
   
   .navbar-nav .nav-link:hover {
-    color: #ffcc00 !important;
+    color: rgb(248, 255, 48);
+  }
+  
+  /* Create the box effect on hover */
+  .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light background for hover */
+    transform: translate(-50%, -50%) scale(0.8);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .navbar-nav .nav-link:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
   
