@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor() {
+    document.body.classList.remove('light-theme'); //dark mode
+  }
 }

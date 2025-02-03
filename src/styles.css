@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* Default Dark Theme */
+body {
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Light Theme for Data Analysis Page */
+  .light-theme {
+    background-color: white;
+    color: black;
+  }
+  

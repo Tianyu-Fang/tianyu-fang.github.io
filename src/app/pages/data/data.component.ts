@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './data.component.css'
 })
 export class DataComponent {
-
+  constructor() {
+    document.body.classList.add('light-theme'); // Apply light mode
+  }
 }
