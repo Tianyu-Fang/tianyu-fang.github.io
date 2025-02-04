@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/tianyu-fang.github.io",
             "index": "src/index.html",
             "baseHref": "/tianyu-fang.github.io/",
             "browser": "src/main.ts",
