@@ -1,35 +1,125 @@
 <div class="container text-center mt-5">
-  <div class="home-container">
-      <p class="intro-text">Hey, there 👋</p>
-      <h1 class="main-heading">
-        I'm <span class="highlight">Tianyu Fang</span><br>
-        a <span class="software-engineer">Software Engineer</span><br>
-        and <span class="data-enthusiast">Data Enthusiast</span>
-      </h1>
-      <p class="sub-text">
-        currently seeking co-op/internship opportunities.
-      </p>
-  </div>
-    
-  
-  
-    <h3 class="mt-4">🔥 Tech Stack</h3>
-    <div class="d-flex justify-content-center flex-wrap mt-3">
-      <span class="badge bg-primary m-2">JavaScript</span>
-      <span class="badge bg-success m-2">Angular</span>
-      <span class="badge bg-warning text-dark m-2">Python</span>
-      <span class="badge bg-info m-2">AWS</span>
-      <span class="badge bg-secondary m-2">SQL</span>
-    </div>
-  
-    <div class="mt-4">
-        <a href="https://github.com/Tianyu-Fang" class="btn btn-outline-light m-2" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/tianyu-fang-tim/" class="btn btn-outline-light m-2" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
+  <div class="container home-container">
+    <div class="row align-items-center">
+      <!-- Left Column: Introduction -->
+      <div class="col-md-7 intro-text">
+        <p class="greeting">Hey, there 👋</p>
+        <h1 class="main-heading">
+          I'm <span class="highlight">Tianyu Fang</span><br>
+          a <a [routerLink]="['/sde']" class="underline-link software-engineer">Software Engineer</a><br>
+          and <a [routerLink]="['/data']" class="underline-link data-enthusiast">Data Enthusiast</a>
+        </h1>
+        <p class="sub-text">
+          Currently seeking internship opportunities.
+        </p>
+
+        <div class="mt-4">
+          <a href="https://github.com/Tianyu-Fang" class="btn btn-outline-light m-2" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/tianyu-fang-tim/" class="btn btn-outline-light m-2" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
       </div>
-      
+      </div>
+  
+      <!-- Right Column: Profile Picture -->
+      <div class="col-md-5 text-center">
+        <img src="assets/images/profile.jpg" alt="Tianyu Fang" class="profile-picture">
+      </div>
+    </div>
   </div>
+
+  <div class="tech-stack-title">
+    <h1>Tech Stack</h1>
+  </div>
+  
+  <div class="container tech-stack">
+    <div class="row">
+      <!-- Programming Languages -->
+      <div class="col-md-2 category languages">
+        <h3>Programming Languages</h3>
+        <div class="badge-container">
+          <span class="badge language-badge">C++</span>
+          <span class="badge language-badge">Java</span>
+          <span class="badge language-badge">Python</span>
+          <span class="badge language-badge">JavaScript</span>
+          <span class="badge language-badge">TypeScript</span>
+          <span class="badge language-badge">jQuery</span>
+          <span class="badge language-badge">Kotlin</span>
+          <span class="badge language-badge">C#</span>
+          <span class="badge language-badge">bash</span>
+        </div>
+      </div>
+  
+      <!-- Data Analysis & Modeling -->
+      <div class="col-md-3 category data">
+        <h3>Data Analysis and Modeling</h3>
+        <div class="badge-container">
+          <span class="badge data-badge">pandas</span>
+          <span class="badge data-badge">numpy</span>
+          <span class="badge data-badge">matplotlib</span>
+          <span class="badge data-badge">Seaborn</span>
+          <span class="badge data-badge">Scikit-learn</span>
+          <span class="badge data-badge">PySpark</span>
+          <span class="badge data-badge">TensorFlow</span>
+          <span class="badge data-badge">PyTorch</span>
+          <span class="badge data-badge">YOLO</span>
+        </div>
+      </div>
+  
+      <!-- Database Management -->
+      <div class="col-md-2 category database">
+        <h3>Database Management</h3>
+        <div class="badge-container">
+          <span class="badge database-badge">SQLite</span>
+          <span class="badge database-badge">MySQL</span>
+          <span class="badge database-badge">PostgreSQL</span>
+          <span class="badge database-badge">Databricks</span>
+          <span class="badge database-badge">MongoDB</span>
+          <span class="badge database-badge">AWS</span>
+          <span class="badge database-badge">Microsoft Azure</span>
+        </div>
+      </div>
+  
+      <!-- Full Stack Development -->
+      <div class="col-md-3 category development">
+        <h3>Full-stack Development</h3>
+        <div class="badge-container">
+          <span class="badge development-badge">HTML</span>
+          <span class="badge development-badge">CSS</span>
+          <span class="badge development-badge">React</span>
+          <span class="badge development-badge">Angular</span>
+          <span class="badge development-badge">Node.js</span>
+          <span class="badge development-badge">RESTful APIs</span>
+          <span class="badge development-badge">SignalR</span>
+          <span class="badge development-badge">ASP.NET Core</span>
+          <span class="badge development-badge">Auth0</span>
+          <span class="badge development-badge">Object-Oriented Design</span>
+          <span class="badge development-badge">Electron</span>
+        </div>
+      </div>
+  
+      <!-- Tools & Technologies -->
+      <div class="col-md-2 category tools">
+        <h3>Tools and Technologies</h3>
+        <div class="badge-container">
+          <span class="badge tools-badge">GitHub Actions</span>
+          <span class="badge tools-badge">Docker</span>
+          <span class="badge tools-badge">Git</span>
+          <span class="badge tools-badge">UNIX</span>  
+          <span class="badge tools-badge">Linux</span> 
+          <span class="badge tools-badge">Tableau</span>
+          <span class="badge tools-badge">Jira</span>
+          <span class="badge tools-badge">Visual Studio</span>
+          <span class="badge tools-badge">Power BI</span>
+          <span class="badge tools-badge">Power Automate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+ </div>
   

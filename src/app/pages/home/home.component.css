@@ -1,48 +1,183 @@
-/* Dark theme background */
+/* Home Page Container */
 .home-container {
-    color: white;
-    padding: 100px 20px;
-    text-align: left;
-    max-width: 800px;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 100px 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Left Section (Text) */
+.intro-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Greeting Text */
+.greeting {
+  font-size: 30px;
+  font-weight: 400;
+  color: #a9b2c3;
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+/* Highlighting Name */
+.highlight {
+  color: #5a9bd5; /* Soft blue */
+  font-weight: 800;
+}
+
+/* Different Colors for Job Titles */
+.software-engineer {
+  color: #f5d8ab; /* Orange */
+  font-weight: 800;
+}
+
+.data-enthusiast {
+  color: #c6fddd; /* Green */
+  font-weight: 800;
+}
+
+/* Subtitle Text */
+.sub-text {
+  font-size: 25px;
+  color: #a9b2c3;
+  margin-top: 10px;
+}
+
+/* Right Section (Profile Image) */
+.profile-picture {
+  flex: 1;
+  max-width: 350px;
+  width: 1000%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Add Underline for Job Titles */
+.underline-link {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 800;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect for "Software Engineer" */
+.software-engineer:hover {
+  color: #f39c12;  /* Orange */
+}
+
+/* Hover Effect for "Data Enthusiast" */
+.data-enthusiast:hover {
+  color: #2ecc71;  /* Green */
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Category Styling */
+.category {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge Styling */
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Different Background Colors for Each Category */
+.language-badge {
+  background-color: #007bff;  /* Blue */
+}
+
+.data-badge {
+  background-color: #28a745;  /* Green */
+}
+
+.database-badge {
+  background-color: #ffc107;  /* Yellow */
+}
+
+.development-badge {
+  background-color: #17a2b8;  /* Teal */
+}
+
+.tools-badge {
+  background-color: #6c757d;  /* Gray */
+}
+
+/* Fancy Tech Stack Header */
+.tech-stack-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 1500;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #007bff,  #17a2b8); /* Gradient effect */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make background visible */
+  text-shadow: 2px 2px 10px #ffffff; /* Subtle glow effect */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Underline effect */
+.tech-stack-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, #007bff,  #17a2b8);
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+
+/* responsive design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  /* Hey, there 👋 */
+
   .intro-text {
-    font-size: 20px;
-    font-weight: 400;
-    color: #a9b2c3;
+    text-align: center;
   }
-  
-  /* Main Heading */
-  .main-heading {
-    font-size: 50px;
-    font-weight: 800;
-    margin-top: 10px;
-    line-height: 1.2;
+
+  .profile-container {
+    justify-content: center;
   }
-  
-  /* Highlighting Name */
-  .highlight {
-    color: #5a9bd5; /* Soft blue */
-    font-weight: 800;
+
+  .profile-picture {
+    max-width: 250px;
   }
-  
-  /* Different Colors for Job Titles */
-  .software-engineer {
-    color: #f5d8ab; /* Orange */
-    font-weight: 800;
-  }
-  
-  .data-enthusiast {
-    color: #c6fddd; /* Green */
-    font-weight: 800;
-  }
-  
-  /* Subtitle Text */
-  .sub-text {
-    font-size: 20px;
-    color: #a9b2c3;
-    margin-top: 10px;
-  }
-  
+}
