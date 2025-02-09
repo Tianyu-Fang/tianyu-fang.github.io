@@ -1,37 +1,60 @@
+/* Fixed Transparent Navbar */
+.navbar {
+  position: fixed; /* Ensures the navbar stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* 80% transparent */
+  padding: 12px 20px;
+  z-index: 1000; /* High z-index to stay above everything */
+  transition: background 0.3s ease-in-out; /* Smooth fade effect */
+}
+
+/* Ensure body content doesn't overlap with navbar */
+body {
+  padding-top: 70px; /* Adjust according to navbar height */
+}
+
+
+/* Navbar Link Styling */
 .navbar-nav .nav-item {
-    position: relative;
-  }
-  
-  .navbar-nav .nav-link {
-    padding: 10px 15px;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: rgb(248, 255, 48);
-  }
-  
-  /* Create the box effect on hover */
-  .navbar-nav .nav-link::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Light background for hover */
-    transform: translate(-50%, -50%) scale(0.8);
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-    z-index: -1;
-  }
-  
-  .navbar-nav .nav-link:hover::before {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-  
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  color: rgba(255, 255, 255, 0.8); /* Slightly more visible white text */
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+  text-decoration: none;
+}
+
+/* Hover Effect: Change Text Color */
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 215, 0); /* Gold color on hover */
+  transform: scale(1); /* Slight zoom effect */
+}
+
+/* Create the box effect on hover */
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15); /* Subtle background */
+  transform: translate(-50%, -50%) scale(0.8);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Expand background on hover */
+.navbar-nav .nav-link:hover::before {
+  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 1;
+}

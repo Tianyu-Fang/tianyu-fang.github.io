@@ -161,6 +161,173 @@
   border-radius: 5px;
 }
 
+/* Work Experience Section */
+.work-experience {
+  margin-top: 60px;
+  padding: 20px;
+  color: white;
+}
+
+.work-experience-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 1500;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #28a745,  #ffc107); /* Gradient effect */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make background visible */
+  text-shadow: 2px 2px 10px #ffffff; /* Subtle glow effect */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* Experience Item */
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Experience Icon (Company Logo) */
+.experience-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  margin-right: 20px;
+}
+
+.experience-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Experience Content */
+.experience-content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  width: 85%;
+  text-align: left;
+}
+
+.experience-content-data {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  width: 85%;
+  text-align: left;
+}
+
+.job-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.company {
+  font-size: 18px;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: bold;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* Bullet Points */
+.experience-content ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.experience-content ul li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #ddd;
+  position: relative;
+  text-align: left;
+}
+
+.experience-content ul li::before {
+  content: "▸";
+  color: #ffcc00;
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+/* General Highlight Style */
+.highlight-keyword {
+  font-weight: bold;
+  color: #ffcc00;  /* Gold Color */
+}
+
+.highlight-tech {
+  font-weight: bold;
+  color: #ffcc00;  /* Light Blue */
+}
+
+.highlight-impact {
+  font-weight: bold;
+  color: #ffcc00;  /* Red to emphasize impact */
+}
+
+/* Bullet Points */
+.experience-content-data ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.experience-content-data ul li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #ddd;
+  position: relative;
+  text-align: left;
+}
+.experience-content-data ul li::before {
+  content: "▸";
+  color: #007bff;
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+/* General Highlight Style */
+.highlight-keyword-data {
+  font-weight: bold;
+  color: #52a0f3; 
+}
+
+.highlight-tech-data {
+  font-weight: bold;
+  color: #52a0f3; 
+}
+
+.highlight-impact-data {
+  font-weight: bold;
+  color: #52a0f3; 
+}
 
 /* responsive design */
 @media (max-width: 768px) {
