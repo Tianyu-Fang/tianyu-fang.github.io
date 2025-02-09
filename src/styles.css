@@ -14,3 +14,13 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
   }
   
+  /* Highlighted Key Terms */
+.highlight {
+  color: #f7d774 !important; /* Yellow */
+  font-weight: bold;
+}
+
+.important {
+  color: #42a5f5 !important; /* Light Blue */
+  font-weight: bold;
+}

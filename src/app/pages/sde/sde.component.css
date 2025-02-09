@@ -1,0 +1,139 @@
+.sde-container {
+    margin-top: 60px;
+    padding: 20px;
+    color: white;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;  /* Wider for better readability */
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Header */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.github-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Tech Stack */
+.tech-stack {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Image Carousel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.carousel-image {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 12px;  /* Increased padding for easier clicking */
+    border-radius: 50%;
+    transition: background 0.2s ease-in-out;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Project Details */
+.project-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;  /* Ensure it wraps properly on smaller screens */
+}
+
+.category-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.category-btn:hover {
+    background-color: #666;
+    transform: scale(1.05);  /* Slightly enlarge button for better interaction */
+}
+
+/* Highlighted Key Terms */
+.highlight {
+    color: #f7d774; /* Yellow */
+    font-weight: bold;
+}
+
+.important {
+    color: #42a5f5; /* Light Blue */
+    font-weight: bold;
+}
