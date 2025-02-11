@@ -220,6 +220,95 @@ export class SdeComponent {
       currentIndex: 0,
       category:"system"
     },
+    {
+      title: "2D Adventure Game ",
+      techStack: [
+        "C#", "Unity", "2D Game", "Level Design", "Game Development", "Code Review"
+      ],
+      githubLink: "https://youtu.be/5N0kWajoJng?si=9tOGBlY4ViDYPVBi",
+      images: [
+        "assets/projects/game1.png",
+        "assets/projects/game2.png",
+        "assets/projects/game3.png",
+        "assets/projects/game4.png",
+        "assets/projects/game5.png",
+        "assets/projects/game6.png",
+        "assets/projects/game7.png",
+        "assets/projects/game8.png",
+        "assets/projects/game9.png",
+        "assets/projects/game10.png"
+      ],
+      goal: "Led a team of five to design and develop a 2D game with six levels using Unity and C#, implemented game mechanics, managed assets, and ensured seamless NPC interaction and gameplay.",     
+      description: `
+        <ul>
+          <li>Organized and led regular team meetings, assigned tasks, and addressed challenges. Delegated tasks based on team members' strengths and ensured clear responsibilities.</li>
+          <li>Developed various scripts, organized assets and levels, optimized performance, conducted code reviews, and <span class="highlight">facilitated  testing and debugging sessions</span>.</li>
+
+        </ul>
+    `,
+      currentIndex: 0,
+      category:"game"
+    },
+    {
+      title: "AI-Driven 2048 Game ",
+      techStack: [
+        "C++", "AI", "Machine Learning", "Expectimax Optimization Algotithm", "Game Development", "Easy Graphics Engine", "Bit Manipulation"
+      ],
+      githubLink: "https://github.com/Tianyu-Fang/AI-Driven-2048-Game",
+      images: [
+        "assets/projects/2048.jpg"
+      ],
+      goal: "Designed and developed an AI using the expectimax optimization algorithm using C++ to play the 2048 game to achieve the highest possible scores. With additional modes aim for the lowest possible scores and to play against human players.",     
+      description: `
+        <ul>
+          <li>Applied <span class="highlight">bit manipulation</span> to optimize performance, implemented <span class="highlight">EGE for graphical representation</span>, performed <span class="highlight">heuristics-based evaluations</span> to guide the AI’s decision, and conducted extensive experiments to measure the AI’s performance.</li>
+          <li>Achieved a <span class="highlight">100% success rate</span> for reaching tiles up to 16384 (2^14), with a <span class="highlight">36% probability of reaching 32768 (2^15)</span>.</li>
+        </ul>
+    `,
+      currentIndex: 0,
+      category:"ai"
+    },
+    {
+      title: "Real-Time Waste Classification Mobile Application",
+      techStack: [
+        "Python", "PyTorch", "YOLO", "YOLO", "Android", "Kotlin", "Object Detection", "Object Classification"
+      ],
+      githubLink: "https://github.com/Tianyu-Fang/Real-Time-Waste-Classification-Android-Application",
+      images: [
+        "assets/projects/waste1.jpg",
+        "assets/projects/waste2.jpg",
+        "assets/projects/waste3.jpg"
+      ],
+      goal: "This project is a real-time object detection & classification system that can be used to sort waste into three categories: recyclable, compost and waste, the current repository contains part of the entire project, which is written in Kotlin and tested mostly on Android devices.",     
+      description: `
+        <ul>
+          <li>Developed a <span class="highlight">waste classification Android mobile app</span> using <span class="highlight">PyTorch-based YOLOv8n</span>, enabling <span class="highlight">real-time object detection and classification</span> of waste materials with interactive user visualization.</li>
+          <li>Achieved a real-time detection system with <span class="highlight">~92% mAP accuracy</span> and near <span class="highlight">real-time performance at ~120 FPS</span> for lightweight YOLOv8n inference.</li>
+    `,
+      currentIndex: 0,
+      category:"ai"
+    },
+    {
+      title: "3D Image Composer with Tensorflow",
+      techStack: [
+        "Python", "Tensorflow", "OpenCV", "Gradio", "Image Segmentation", "HuggingFace"
+      ],
+      githubLink: "https://huggingface.co/spaces/Tianyu-Fang/Lab4_3D_Image_Composer",
+      images: [
+        "assets/projects/3d1.jpg",
+        "assets/projects/3d2.jpg",
+        "assets/projects/3d3.jpg"
+      ],
+      goal: "This project focuses on image segmentation and stereoscopic 3D image generation using deep learning and computer vision techniques. The core idea is to extract people from images and seamlessly integrate them into customizable 3D scenes, creating anaglyph images with accurate depth perception.",     
+      description: `
+        <ul>
+          <li>Utilized <span class="highlight">Python</span>, <span class="highlight">TensorFlow</span>, <span class="highlight">OpenCV</span>, and <span class="highlight">Segment Anything Model (SAM)</span> to segment persons from images and integrate them into <span class="highlight">stereoscopic 3D scenes</span>, built an interactive <span class="highlight">Gradio App deployed on HuggingFace</span>.</li>
+          <li>Generated customizable anaglyph images with accurate depth perception by manipulating stereoscopic disparities, with a processing <span class="highlight">accuracy exceeding 90%</span> and an intuitive multi-step interface.</li>
+        </ul>
+    `,
+      currentIndex: 0,
+      category:"ai"
+    },
   ];
 
   prevImage(index: number) {
