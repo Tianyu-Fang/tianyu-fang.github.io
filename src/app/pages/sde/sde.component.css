@@ -58,7 +58,7 @@
 .carousel-image {
     max-width: 100%;
     border-radius: 8px;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -137,3 +137,31 @@
     color: #42a5f5; /* Light Blue */
     font-weight: bold;
 }
+
+/* Tech Stack Badge Styling */
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tech-badge {
+    background-color: #6990F2; /* Default Blue */
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .tech-badge:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+  

@@ -17,7 +17,12 @@
         </a>
       </div>
   
-      <p class="tech-stack">Tech Stack: <span>{{ project.techStack }}</span></p>
+      <!-- Tech Stack Badges -->
+      <div class="tech-stack-container">
+        <span *ngFor="let tech of project.techStack" class="tech-badge">
+          {{ tech }}
+        </span>
+      </div>
   
       <!-- Image Carousel -->
       <div class="carousel-container">
@@ -28,7 +33,7 @@
   
       <!-- Project Details -->
       <div class="project-details">
-        <h3>Project Goal</h3>
+        <h3>Project Overview</h3>
         <p>{{ project.goal }}</p>
   
         <!-- Project Description -->
