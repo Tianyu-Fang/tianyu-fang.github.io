@@ -152,6 +152,74 @@ export class SdeComponent {
       currentIndex: 0,
       category:"mobile"
     },
+    {
+      title: "Virtual Memory Simulator",
+      techStack: [
+        "C++", "Python", "GNU Make", "Bash", "DevOps", "CI/CD", "Unit Testing", "Test Automation", "Simulation"
+      ],
+      githubLink: "https://github.com/Tianyu-Fang/VirtualMemorySimulator",
+      images: [
+        "assets/projects/VMM1.png",
+        "assets/projects/VMM2.png"
+      ],
+      goal: "The Virtual Memory Simulator is an implementation of a two-level page table that simulates memory management in an operating system. It supports configurable memory parameters, a clock page replacement algorithm, and a TLB (Translation Lookaside Buffer) with LRU eviction. The simulator aims to efficiently handle virtual memory allocation, address translation, and page replacement while optimizing space and time usage.",     
+      description: `
+        <ul>
+          <li>Developed a <span class="highlight">configurable Virtual Memory Simulator</span> in <span class="highlight">C++</span> to model OS memory management, including address translation, TLB caching <span class="highlight">(96% hit rate)</span>, and <span class="highlight">two-level page table optimization</span> (reducing space usage by <span class="highlight">up to 2092×)</span>.</li>
+          <li>Designed and implemented an  <span class="highlight">LRU-based TLB</span> and  <span class="highlight">clock page replacement algorithm</span>, minimizing memory overhead and improving page fault handling efficiency.</li>
+          <li>Built an  <span class="highlight">automated GNU Make system</span> for  <span class="highlight">compilation, testing, and execution</span>, integrating  <span class="highlight">Bash scripting</span> for dynamic memory calculations and workload generation.</li>
+          <li>Developed  <span class="highlight">unit tests</span> and  <span class="highlight">integrated CI/CD pipelines</span> to automate builds and validation, ensuring reliability and maintainability across environments.</li>
+          <li>Created a  <span class="highlight">workload generation script using Python</span> to simulate real-world process memory access patterns, testing locality and efficiency under different workloads.</li>
+        </ul>
+    `,
+      currentIndex: 0,
+      category:"system"
+    },
+    {
+      title: "Little Log File System",
+      techStack: [
+        "C++", "File System", "Unit Testing", "Test Automation", "Simulation"
+      ],
+      githubLink: "https://github.com/Tianyu-Fang/Little-Log-File-System",
+      images: [
+        "assets/projects/llfs1.png",
+        "assets/projects/llfs2.png"
+      ],
+      goal: "The Little Log File System (LLFS) is a simplified file system implementation designed for educational purposes. It demonstrates the key principles of file system design, including disk management, metadata handling, crash recovery, and persistence.",     
+      description: `
+        <ul>
+          <li>Developed a modular file system in <span class="highlight">C++</span> that supports file creation, reading, writing, deletion, and crash recovery, <span class="highlight">achieving 99.9% accuracy</span> in metadata validation during simulated crash recovery tests.</li>
+          <li>Leveraged direct and indirect block pointers to support files up to <span class="highlight">4 GB</span>, enabling efficient large file management.</li>
+          <li>Conducted benchmarks showing <span class="highlight">write speeds of 0.002 seconds</span> for 1 MB files and <span class="highlight">read speeds of 0.003 seconds</span>, demonstrating competitive performance for small-scale file systems.</li>
+          <li>Validated disk consistency using hexdump, confirming <span class="highlight">100% correctness of written data and free block vector updates</span> in test scenarios.</li>
+        </ul>
+    `,
+      currentIndex: 0,
+      category:"system"
+    },
+    {
+      title: "Improved Differential Fault Analysis of Grain-128AEAD ",
+      techStack: [
+        "Python", "Cybersecurity", "Cryptography", "Research", "Fault Attack", "Excel VBA", "Encryption Algorithm"
+      ],
+      githubLink: "https://www.oaepublish.com/articles/jsss.2023.42",
+      images: [
+        "assets/projects/research1.png",
+        "assets/projects/research2.png",
+        "assets/projects/research3.png",
+        "assets/projects/research4.jpg"
+      ],
+      goal: "This research designed and enhanced fault attack models to analyze the security margin of the stream cipher - Grain-128AEAD.",     
+      description: `
+        <ul>
+          <li>Improved attack feasibility, requiring 388 keystreams for a two-byte model and 279 keystreams for a four-byte model to identify target fault locations. Proposed countermeasures against the fault attacks that <span class="highlight">improved the security by 14%</span>.</li>
+          <li>Developed and applied <span class="highlight">probabilistic random fault attacks</span> to more relaxed moderate control models. Utilized <span class="highlight">Python</span> to analyze the experimental data, processing millions of data points to achieve accurate and reliable results.</li>
+          <li>Contributed significantly to the field of <span class="highlight">lightweight cryptography</span> by improving the understanding and effectiveness of fault attacks on <span class="highlight">encryption algorithms</span>.</li>
+        </ul>
+    `,
+      currentIndex: 0,
+      category:"system"
+    },
   ];
 
   prevImage(index: number) {
@@ -172,6 +240,10 @@ export class SdeComponent {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
   
 
 }
