@@ -2,11 +2,14 @@
     <h1 class="page-title">Software Development Projects</h1>
 
     <!-- Category Labels -->
-  <div class="categories">
-    <button (click)="scrollTo('system')" class="category-btn">System</button>
-    <button (click)="scrollTo('website')" class="category-btn">Website</button>
-    <button (click)="scrollTo('mobile')" class="category-btn">Mobile</button>
-  </div>
+    <div class="categories">
+      <button (click)="scrollTo('website')" class="category-btn website-btn">Website</button>
+      <button (click)="scrollTo('mobile')" class="category-btn mobile-btn">Mobile</button>
+      <button (click)="scrollTo('system')" class="category-btn system-btn">System</button>
+      <button (click)="scrollTo('game')" class="category-btn game-btn">Game</button>
+      <button (click)="scrollTo('ai')" class="category-btn ai-btn">AI</button>
+    </div>
+    
   
     <div *ngFor="let project of projects; let i = index" [id]="project.category" class="project-card">
         <!-- Project Header -->
@@ -19,7 +22,7 @@
   
       <!-- Tech Stack Badges -->
       <div class="tech-stack-container">
-        <span *ngFor="let tech of project.techStack" class="tech-badge">
+        <span *ngFor="let tech of project.techStack" class="tech-badge-website">
           {{ tech }}
         </span>
       </div>

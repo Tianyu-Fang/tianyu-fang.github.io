@@ -110,22 +110,63 @@
     flex-wrap: wrap;  /* Ensure it wraps properly on smaller screens */
 }
 
+/* General Button Styles */
 .category-btn {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background-color: #444;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.category-btn:hover {
-    background-color: #666;
-    transform: scale(1.05);  /* Slightly enlarge button for better interaction */
-}
+  }
+  
+  /* Website Button - Blue */
+  .website-btn {
+    background-color: #a5b7f9; /* Blue */
+  }
+  
+  .website-btn:hover {
+    background-color: #6b77a3; /* Darker Blue */
+  }
+  
+  /* Mobile Button - Green */
+  .mobile-btn {
+    background-color: #7980f6; /* Green */
+  }
+  
+  .mobile-btn:hover {
+    background-color: #4f53a3; /* Darker Green */
+  }
+  
+  /* System Button - Red */
+  .system-btn {
+    background-color: #8e79f6; /* Red */
+  }
+  
+  .system-btn:hover {
+    background-color: #4d4289; /* Darker Red */
+  }
+  
+  /* Game Button - Purple */
+  .game-btn {
+    background-color: #a556f9; /* Purple */
+  }
+  
+  .game-btn:hover {
+    background-color: #65349b; /* Darker Purple */
+  }
+  
+  /* AI Button - Yellow */
+  .ai-btn {
+    background-color: #dd7ef7; /* Yellow */
+  }
+  
+  .ai-btn:hover {
+    background-color: #7c458b; /* Darker Yellow */
+  }
+  
 
 /* Highlighted Key Terms */
 .highlight {
@@ -146,7 +187,7 @@
     margin-top: 10px;
   }
   
-  .tech-badge {
+  .tech-badge-website {
     background-color: #6990F2; /* Default Blue */
     color: white;
     padding: 6px 12px;
