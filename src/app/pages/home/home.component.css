@@ -154,7 +154,9 @@
 .tech-stack-title::after {
   content: "";
   display: block;
-  width: 150px;
+  width: 30%; /* 15% of the parent container width */
+  min-width: 100px; /* Set a minimum width to avoid too small lines */
+  max-width: 150px; /* Set a maximum width to prevent overly long lines */
   height: 5px;
   background: linear-gradient(90deg, #007bff,  #17a2b8);
   margin: 10px auto 0;
@@ -185,7 +187,9 @@
 .work-experience-title::after {
   content: "";
   display: block;
-  width: 250px;
+  width: 40%; /* 15% of the parent container width */
+  min-width: 100px; /* Set a minimum width to avoid too small lines */
+  max-width: 400px; /* Set a maximum width to prevent overly long lines */
   height: 5px;
   background: linear-gradient(90deg, #28a745,  #ffc107);
   margin: 10px auto 0;

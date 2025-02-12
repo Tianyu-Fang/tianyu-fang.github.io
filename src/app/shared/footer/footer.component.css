@@ -1,31 +1,41 @@
 .watermark-footer {
-    display: flex;
-    justify-content: center;  /* Center content horizontally */
-    align-items: center;  /* Align items in the center */
-    gap: 20px;  /* Space between elements */
-    font-size: 14px;
-    color: rgba(133, 188, 255, 0.781);
-    text-align: center;
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    pointer-events: none;  /* Prevents interference with clicks */
-    z-index: 999;
-  }
-  
-  /* Remove underline from email link */
-  .watermark-footer a {
-    color: rgba(133, 188, 255, 0.781);
-    text-decoration: none;
-  }
-  
-  /* Ensure responsiveness on small screens */
-  @media (max-width: 768px) {
-    .watermark-footer {
+  display: flex;
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Align items in the center */
+  gap: 20px;  /* Space between elements */
+  font-size: 14px;
+  color: rgba(133, 188, 255, 0.781);
+  text-align: center;
+  position: relative;  /* Change from fixed to relative */
+  width: 100%;
+  pointer-events: none;  /* Prevents interference with clicks */
+  z-index: 999;
+  padding: 10px 0;
+}
+
+/* Ensure the body takes at least the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push the footer to the bottom */
+.main-content {
+  flex: 1;  /* Pushes the footer down */
+}
+
+/* Remove underline from email link */
+.watermark-footer a {
+  color: rgba(133, 188, 255, 0.781);
+  text-decoration: none;
+}
+
+/* Ensure responsiveness on small screens */
+@media (max-width: 768px) {
+  .watermark-footer {
       flex-direction: column;  /* Stack items on small screens */
       gap: 5px;
-    }
   }
-  
+}

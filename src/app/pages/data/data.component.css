@@ -191,7 +191,9 @@
   .data-title::after {
     content: "";
     display: block;
-    width: 350px;
+    width: 65%; /* 15% of the parent container width */
+    min-width: 100px; /* Set a minimum width to avoid too small lines */
+    max-width: 400px; /* Set a maximum width to prevent overly long lines */
     height: 5px;
     background: linear-gradient(90deg, #fd6e00,  #9301b8);
     margin: 10px auto 0;
