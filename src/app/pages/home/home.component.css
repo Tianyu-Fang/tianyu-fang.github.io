@@ -154,7 +154,7 @@
 .tech-stack-title::after {
   content: "";
   display: block;
-  width: 100px;
+  width: 150px;
   height: 5px;
   background: linear-gradient(90deg, #007bff,  #17a2b8);
   margin: 10px auto 0;
@@ -180,6 +180,16 @@
   letter-spacing: 2px;
   margin-bottom: 20px;
   position: relative;
+}
+/* Underline effect */
+.work-experience-title::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 5px;
+  background: linear-gradient(90deg, #28a745,  #ffc107);
+  margin: 10px auto 0;
+  border-radius: 5px;
 }
 
 /* Section Title */

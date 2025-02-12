@@ -1,1 +1,50 @@
-<p>data works!</p>
+<div class="container data-container">
+    <div class="data-title">
+        <h1>Data Science Projects</h1>
+    </div>
+    
+    <div class="categories">
+        <button (click)="scrollToTop()" class="scroll-to-top">
+            ↑ Top
+        </button>
+    </div>
+
+  
+    <div *ngFor="let project of projects; let i = index" [id]="project.category" class="project-card">
+        <!-- Project Header -->
+      <div class="project-header">
+        <h2 class="project-title">{{ project.title }}</h2>
+        <a [href]="project.githubLink" target="_blank" rel="noopener noreferrer" class="github-icon">
+          <img src="assets/images/github.svg" alt="GitHub Repo">
+        </a>
+      </div>
+  
+      <!-- Tech Stack Badges -->
+      <div class="tech-stack-container">
+        <span *ngFor="let tech of project.techStack" class="tech-badge-data">
+          {{ tech }}
+        </span>
+      </div>
+  
+      <!-- Image Carousel -->
+      <div class="carousel-container">
+        <button class="carousel-btn left" (click)="prevImage(i)">&#10094;</button>
+        <img [src]="project.images[project.currentIndex]" alt="Project Screenshot" class="carousel-image">
+        <button class="carousel-btn right" (click)="nextImage(i)">&#10095;</button>
+      </div>
+  
+      <!-- Project Details -->
+      <div class="project-details">
+        <h3>Project Overview</h3>
+        <p>{{ project.goal }}</p>
+  
+        <!-- Project Description -->
+        <h3>Project Description</h3>
+        <p [innerHTML]="project.description"></p>
+          
+          
+
+      </div>
+    </div>
+  </div>
+  

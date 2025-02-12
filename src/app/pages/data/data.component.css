@@ -1,0 +1,200 @@
+.data-container{
+    margin-top: 60px;
+    padding:20px;
+    color:rgb(0, 0, 0);
+}
+
+/* Page Title */
+.page-title {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(246, 195, 173, 0.312);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1200px;  /* Wider for better readability */
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Header */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.github-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Tech Stack */
+.tech-stack {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Image Carousel */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.carousel-image {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: #f69c28;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 12px;  /* Increased padding for easier clicking */
+    border-radius: 50%;
+    transition: background 0.2s ease-in-out;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Project Details */
+.project-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #080808;
+    line-height: 1.5;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;  /* Ensure it wraps properly on smaller screens */
+}
+
+/* General Button Styles */
+.category-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+
+.important {
+    color: #42a5f5; /* Light Blue */
+    font-weight: bold;
+}
+
+/* Tech Stack Badge Styling */
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tech-badge-data {
+    background-color: #f69c28; /* Default Blue */
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .tech-badge:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e777b2; /* Yellow */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #c45992; /* Darker Yellow */
+    transform: scale(1.1);
+  }
+  
+  .data-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1500;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #fd6e00,  #9301b8); /* Gradient effect */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: transparent; /* Make background visible */
+    text-shadow: 2px 2px 10px #f3ceae93; /* Subtle glow effect */
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Underline effect */
+  .data-title::after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 5px;
+    background: linear-gradient(90deg, #fd6e00,  #9301b8);
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+  

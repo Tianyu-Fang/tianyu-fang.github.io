@@ -308,7 +308,7 @@ export class SdeComponent {
     `,
       currentIndex: 0,
       category:"ai"
-    },
+    }
   ];
 
   prevImage(index: number) {
